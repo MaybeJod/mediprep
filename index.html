@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediPrep_AR/VR</title>
+
+    <link rel="icon" href="img/MiP_Symbol_logo.png">
+    <link rel="apple-touch-icon" href="img/MiP_Symbol_logo.png">
+    
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Model Viewer-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module"
+    src="https://unpkg.com/@google/model-viewer@<version>/dist/model-viewer.min.js">
+    </script>
+
+</head>
+<body>
+
+<!--NAV--> 
+
+  <nav class="navbar">
+            
+    <a href="index.html"><img src="img/MiP_Logo_Basic_1_rgb.svg" alt="logo" class="logoleft"></a>
+
+      <label for="hamburger" class="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger">
+        
+  
+    <ul class="menu">
+      <li class="nav-item active"><a href="index.html">Hem</a></li>
+      <li class="nav-item"><a href="#vr">VR</a></li>
+      <li class="nav-item"><a href="#ar">AR</a></li>
+      <li class="nav-item"><a href="#mediquiz">MediQuiz</a></li>
+      <li class="nav-item"><a href="#omoss">Om oss</a></li>
+    </ul> 
+  </nav>
+
+<!--NAV END--> 
+
+    <section class="blue">
+        <h1 class="textGreen" style="font-size: 50px;">Grupp 10 AR och VR konceptsida</h1>
+
+        
+        
+    </section>
+    <section>
+        <h1 class="textPink">Välkommen :)</h1>
+        <p>Denna sida är under utveckling, detta betyder att det kan finnas lite buggar här och där. Den här sidan finns här för att testa olika koncept och är inte den riktiga hemsidan.
+        </p>
+
+        
+        <!--Tilt svg-->
+        <div class="tilt">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
+    <section id="vr">
+        <h1 class="textPink" >Medi-360</h1>
+        <p>Dessa filmer visar hur det går till för att visa hur det går till när man ska få en plastslang i blodkälet och när man sövs inför operation 
+
+        <br> <br>
+
+        I filmerna går det att titta runt genom att klicka och dra med muspekaren. Du kan även använda pilarna uppe till vänster för att se dig omkring i videon. Det går även att zooma in och ut genom att scrolla, och välja olika hastigeter på videon genom att klicka på kugghjulet nere till höger. 
+
+        </p>
+
+        <center>
+            <h2 class="textBlue">Plastslang i blodkärl</h2>
+
+            <iframe width="500" height="450" src="https://www.youtube.com/embed/FU4jcOqrw8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <p>När du ska opereras behöver du få ett stick för att få en liten plastslang insatt i ett blodkärl. Plastslangen finns i olika färger och storlekar och du kommer att få den som passar bäst för just dig. För att få in plastslangen i blodkärlet måste man sticka ett litet hål i huden med en liten nål. Efter sticket tas nålen bort och slängs så att bara den mjuka plastslangen sitter kvar i blodkärlet. I plastslangen kan du sedan få vätska och olika mediciner direkt in i blodet utan att behöva få ett stick igen. Plastslangen kallas för olika saker på sjukhusspråk.</p>
+
+            <h2 class="textBlue">Nedsövning innan operation</h2>
+
+            <iframe width="500" height="450" src="https://www.youtube.com/embed/f_fTPd38C0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <p>Ibland när man ska opereras behöver man sövas, detta betyder att man kommer sova djup. En narkossköterska kommer vara vid din sida och hålla koll på dig under hela processen så att du sover och inte känner något under operationen.</p>
+        </center>
+    </section>
+    <section >
+        <h1 class="textOrange">MediFly</h1>
+        <p>I den här filmen kommer du se olika rum på sjukhuset. Klicka runt och utforska sjukhuset på egen hand. Du gör samma sak som filmerna ovanför. </p>
+
+        <center>
+            <iframe width="500" height="450" src="https://www.youtube.com/embed/mK6qFUCa0NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+    </section>
+    <section id="ar">
+        <h1 class="textViolett">Medi-AR</h1>
+        <p>De här sakerna kommer du förmodligen stöta på i sjukhuset. Om du besöker hemsidan genom datorn kan du klicka på modellerna och dra runt dem, för att se olika vinklar. Om du besöker sidan via mobilen kan du trycka på knappen "Klicka för att se objektet där du är just nu :)"</p>
+
+        <div id="ar-prompt">
+            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+        </div>
+        <!--AR model-->
+        <center>
+
+            <h2 class="textPink">Blodtrycksmätare</h2>
+            <model-viewer bounds="tight" src="img/blodtryck.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="-17.48deg 47.38deg auto">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button class="buttonpos" slot="ar-button" id="ar-button" >
+                    Klicka för att se objektet där du är just nu :) 
+                </button>
+            </model-viewer>
+
+            <p>Det här armbandet som sätts högt upp på armen mäter hur ditt hjärta pumpar runt blodet i kroppen. Då och då klämmer armbandet till om din arm en kort stund, och så mäts ditt blodtryck.</p>
+            
+            <h2 class="textPink">Emla-plåster</h2>
+            <model-viewer bounds="tight" src="img/emla_plaster.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button" class="buttonpos">
+                    Klicka för att se objektet där du är just nu :) 
+                </button>
+            </model-viewer>
+            <p>Emla-plåster bedövar huden. För att det ska hinna verka får du plåstret ca 1 timme innan du får en plastslang i blodkälet. Plåstret gör att du känner mindre smärta, men du kan fortfarande känna beröring och tryck. </p>
+
+            <h2 class="textPink">Stetoskop</h2>
+            <model-viewer bounds="tight" src="img/stethoscope.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button" class="buttonpos">
+                    Klicka för att se objektet där du är just nu :) 
+                </button>
+            </model-viewer>
+            <p>Ett stetoskop fungerar nästan som ett par hörlurar. Det används för att lyssna på kroppens olika ljud. Med stetoskopet kan man både lyssna både på lungornas andningsljud och när dörrarna mellan hjärtats rum öppnas och stängs. Lyssnar man med stetoskopet över naveln hör man ljud från magen och tarmarna. Det är bra om man sitter eller ligger alldeles stilla, är tyst och andas stora andetag under tiden någon lyssnar med stetoskopet.</p> </p>
+
+
+
+        </center>
+    </section>
+    <section id="mediquiz">
+        <h1 class="textGreen">MediQuiz</h1>
+        <p>För att visualisera MediQuiz-konceptet skapades en interaktiv prototyp i programmet Figma. Tanken med prototypen är att visa hur designgruppen har tänkt att gränssnittet för spelet ska se ut. Prototypen består av en bakgrundsbild som föreställer den miljö som användaren befinner sig i där användarens kameravy utgör spelets bakgrund. Interaktionen med spelet sker genom att användaren placerar ett finger på skärmen och drar det framåt för att sikta och kasta en pil på en ballong som har rätt svar på den fråga som ställts. För att skjuta mot ett objekt behöver användaren släppa fingret från skärmen. Användaren får därefter respons som visar om svaret är rätt eller fel, där finns det även kort information relaterad till frågan som ställts.</p>
+        <center>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="500" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSbKo1DAHuxRlfpoLYyZgYC%2FMediPrep-Quiz%3Fpage-id%3D0%253A1%26node-id%3D141%253A60%26viewport%3D429%252C292%252C0.14%26scaling%3Dscale-down%26starting-point-node-id%3D34%253A33%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+        </center>
+    </section>
+    <section id="omoss">
+        <h1>Tack för ditt besök! </h1>
+        <p>Vi är en studentgrupp från Södertörns Högskola och samarbetar med den kommande nationella informations och medicinska webbplatsen för barn och ungdomar, MediPrep. Uppdraget vi fick från MediPrep handlade om hur webbaserad VR och AR kan användas inom MediPrep för att möjliggöra värdefulla och lärorika upplevelser samt för att förmedla information.</p>
+
+        <div class="tiltfooter">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+    </section>
+    <section class="blue footersection">
+        <footer>
+            <center>
+                <p class="textWhite"1>  Skapad med <span class="material-symbols-outlined textPink" > favorite </span> av <em class="textOrange"><a href="https://www.youtube.com/watch?v=6-HUgzYPm9g" target="_blank">Grupp 10</a></em> | Copyright &copy; 2022</p>
+            </center>            
+        </footer>
+    </section>
+</body>
+</html>
